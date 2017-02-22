@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/pvp.css">
+  <title>PvP Match</title>
+</head>
+<body>
+
+<header>
+<h1>P v P MATCH</h1>
+<h2 id='messageBoard'></h2>
+<h3>Round: <div class='roundCount'></div></h3>
+<h2 class='p1' >Player 1: </h2><div class='bullet1'></div>
+<!-- <img class='bullet' src="/Users/KevinYang/wdi11/projects/tic-tac-toe/images/bullet.gif" alt=""> -->
+</header>
+
+
+<table id="board">
+  <tr>
+    <td id="box0"></td>
+    <td id="box1"></td>
+    <td id="box2"></td>
+  </tr>
+  <tr>
+    <td id="box3"></td>
+    <td id="box4"></td>
+    <td id="box5"></td>
+  </tr>
+  <tr>
+    <td id="box6"></td>
+    <td id="box7"></td>
+    <td id="box8"></td>
+  </tr>
+</table>
+
+<h2 class='p2'>Player 2:</h2><div class='bullet2'></div>
+<a href="file:///Users/KevinYang/wdi11/projects/tic-tac-toe/index.html">
+  <div class='menu'>Main Menu</div>
+</a>
+<footer>
+<div class='end'><a href="https://twitter.com/Kukaheadla" class="twitter-follow-button" data-show-count="false">Follow @Kukaheadla</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+<p>&copy Kukaheadla</p>
+</footer>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script src="main.js" charset="utf-8"></script>
+<script>
+window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));
+
+</script>
+</html>

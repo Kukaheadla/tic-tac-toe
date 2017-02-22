@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <ol>
+  <li>Click the grid to place '<img src="images/circle-outline-xxl.png" alt="CIRCLE" class='gridPlacer'>' if you are player 1 or ''<img src="images/makefg.png" alt="CROSS" class='gridPlacer'>' if you are player 2</li>
+  <li> Players alternate placing their symbols on the game board until either opponent has three in a row or all nine squares are filled. </li>
+  <li>A new round will start if the match is finished. The winner will have '<img src="images/bullet.gif" alt="a bullet" id='bullet'>' displayed next to the player tag</li>
+  <li>The first player who have received  '<img src="images/bullet.gif" alt="a bullet" id='bullet'>' will win </li>
+  <li>Respect your opponent!</li>
+</ol>
+<footer>
+<a href="index.html"><div class='menu' id='hoverSound'>GO BACK</div></a>
+</footer>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script>
+
+$("#hoverSound").mouseenter(function() {
+  new Audio('audio/beep.mp3').play()
+});
+$("#hoverSound").mousedown(function() {
+  new Audio('audio/gun.mp3').play()
+});
+
+</script>
+</html>

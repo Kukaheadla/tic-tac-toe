@@ -1,0 +1,82 @@
+*{
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+}
+
+h1{
+  text-align:center;
+  margin-bottom: -19px;
+}
+
+h3 {
+  text-align:center;
+  padding-left: 126px;
+}
+
+body {
+
+  background-image: url('https://content.pulse.ea.com/content/battlefield-portal/en_US/news/battlefield-1/fall-update-battlefield-1/_jcr_content/featuredImage/renditions/rendition1.img.jpg');
+  background-size: cover;
+  background-repeat:   no-repeat;
+  height: 100vh
+  /*text-align: center;*/
+
+}
+
+.menu{
+  padding-top: 9px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 8px;
+  height:26px;
+  width: 150px;
+
+}
+
+.menu:hover {
+  background-color: white;
+  color: black;
+}
+.end{
+  text-align:center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 320px;
+}
+
+p{
+  font-size: 8px;
+}
+
+a{
+  text-decoration:none;
+}
+
+.gridPlacer {
+  width: 12px;
+}
+
+li{
+  margin:12px;
+}
+
+#bullet {
+  width: 18px;
+}
+
+ol{
+  max-width: 608px;
+}
+
+@media (max-device-width: 320px){
+
+  footer{
+    margin-top: 120px;
+  }
+  li{
+    color: black;
+  }
+}

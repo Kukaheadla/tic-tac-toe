@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>TIC-TAC-TOE</title>
+</head>
+<body>
+  <h1>TIC-TAC-TOE</h1>
+  <h3>battleground</h3>
+  <a href="pvp/pvp.html"><div class='menu' id='hoverSound'>PvP</div></a>
+  <br>
+  <a href="instruction.html"><div class='menu'  id='hoverSound2'>Instruction</div></a>
+  <br>
+  <footer>
+  <div class='end'><a href="https://twitter.com/Kukaheadla" class="twitter-follow-button" data-show-count="false">Follow @Kukaheadla</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+  <p>&copy Kukaheadla</p>
+
+  </footer>
+</body>
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script>
+window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));
+
+function play(){
+     var audio = document.getElementById("audio");
+     audio.play();
+               }
+
+
+
+$("#hoverSound").mouseenter(function() {
+  new Audio('audio/beep.mp3').play()
+});
+
+$("#hoverSound2").mouseenter(function() {
+  new Audio('audio/beep.mp3').play()
+});
+
+$("#hoverSound").mousedown(function() {
+  new Audio('audio/gun.mp3').play()
+});
+
+$("#hoverSound2").mousedown(function() {
+  new Audio('audio/gun.mp3').play()
+});
+
+</script>
+</html>
