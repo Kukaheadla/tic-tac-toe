@@ -39,7 +39,7 @@
 
 <h2 class='p2'>Player 2:</h2><div class='bullet2'></div>
 <a href="file:///Users/KevinYang/wdi11/projects/tic-tac-toe/index.html">
-  <div class='menu'>Main Menu</div>
+  <div class='menu' id='hoverSound'>Main Menu</div>
 </a>
 <footer>
 <div class='end'><a href="https://twitter.com/Kukaheadla" class="twitter-follow-button" data-show-count="false">Follow @Kukaheadla</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
@@ -69,5 +69,8 @@ window.twttr = (function(d, s, id) {
   return t;
 }(document, "script", "twitter-wjs"));
 
+$("#hoverSound").mouseenter(function() {
+  new Audio('../audio/beep.mp3').play()
+});
 </script>
 </html>

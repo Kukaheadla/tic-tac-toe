@@ -14,7 +14,7 @@ setTimeout(function() {
       $('#board').find('td').on('click', function(){
             if (turnCount % 2 === 0){
               if($(this).html()===""){
-                $(this).prepend('<img id="theImg" src="/Users/KevinYang/wdi11/projects/tic-tac-toe/images/circle-outline-xxl.png" />')
+                $(this).prepend('<img id="theImg" src="../images/circle-outline-xxl.png" />');
                 turnCount++;
               }
               checkWin('player 1 ');
@@ -22,7 +22,7 @@ setTimeout(function() {
               $('.p2').attr('id','playerTurn')
             } else {
               if($(this).html()===""){
-                $(this).prepend('<img id="theImg" src="/Users/KevinYang/wdi11/projects/tic-tac-toe/images/makefg.png" />')
+                $(this).prepend('<img id="theImg" src="../images/makefg.png" />');
                 turnCount++;
               }
               checkWin('player 2 ')
@@ -40,10 +40,10 @@ setTimeout(function() {
         function winTally(){
           if(player === 'player 1 '){
             player1Tally.push('0')
-            $('.bullet1').prepend('<img class="bullet" src="/Users/KevinYang/wdi11/projects/tic-tac-toe/images/bullet.gif" alt="">')
+            $('.bullet1').prepend('<img class="bullet" src="../images/bullet.gif" alt="Bullet">')
           } else if (player === 'player 2 '){
             player2Tally.push('0')
-            $('.bullet2').prepend('<img class="bullet" src="/Users/KevinYang/wdi11/projects/tic-tac-toe/images/bullet.gif" alt="">')
+            $('.bullet2').prepend('<img class="bullet" src="../images/bullet.gif" alt="Bullet">')
           }
         }
 
