@@ -139,7 +139,7 @@ a {
   margin-left: 8em;
 }
 
-@media (max-device-width: 375px){
+@media (max-device-width: 415px){
 
   h1{
     font-size: 20px;
