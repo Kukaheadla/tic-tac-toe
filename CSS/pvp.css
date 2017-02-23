@@ -166,7 +166,7 @@ a {
   }
 
   .menu{
-    margin-top: -96px;
+    margin-top: -173px;
   }
 
   h3{
@@ -201,4 +201,7 @@ a {
     padding-left: 3px;
   }
 
+  body{
+    height: 100vh;
+  }
 }

@@ -80,3 +80,13 @@ ol{
     color: black;
   }
 }
+
+@media (max-device-height: 420px) {
+  body{
+    height: 100vh;
+  }
+
+  footer{
+    margin-top: 32px;
+  }
+}
