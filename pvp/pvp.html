@@ -21,19 +21,19 @@
 
 <table id="board">
   <tr>
-    <td id="box0"></td>
-    <td id="box1"></td>
-    <td id="box2"></td>
+    <td id="box0" class='boardHover'></td>
+    <td id="box1" class='boardHover'></td>
+    <td id="box2" class='boardHover'></td>
   </tr>
   <tr>
-    <td id="box3"></td>
-    <td id="box4"></td>
-    <td id="box5"></td>
+    <td id="box3" class='boardHover'></td>
+    <td id="box4" class='boardHover'></td>
+    <td id="box5" class='boardHover'></td>
   </tr>
   <tr>
-    <td id="box6"></td>
-    <td id="box7"></td>
-    <td id="box8"></td>
+    <td id="box6" class='boardHover'></td>
+    <td id="box7" class='boardHover'></td>
+    <td id="box8" class='boardHover'></td>
   </tr>
 </table>
 
@@ -71,6 +71,14 @@ window.twttr = (function(d, s, id) {
 
 $("#hoverSound").mouseenter(function() {
   new Audio('../audio/beep.mp3').play()
+});
+
+$(".boardHover").mouseenter(function() {
+  new Audio('../audio/beep2.mp3').play()
+});
+
+$(".boardHover").mousedown(function() {
+  new Audio('../audio/beep3.mp3').play()
 });
 </script>
 </html>
