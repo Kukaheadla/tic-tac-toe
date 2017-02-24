@@ -56,6 +56,9 @@ setTimeout(function() {
               $('#messageBoard').html(player +'WINS');
               setTimeout(cleanBoard, 1288);
               winTally();
+              colorShift('#box0');
+              colorShift('#box1');
+              colorShift('#box2');
               setTimeout(victory, 1288);
               return;
               }
@@ -69,6 +72,9 @@ setTimeout(function() {
               $('#messageBoard').html(player +'WINS');
               setTimeout(cleanBoard, 1288);
               winTally();
+              colorShift('#box0');
+              colorShift('#box3');
+              colorShift('#box6');
               setTimeout(victory, 1288);
               return;
             }
@@ -82,6 +88,9 @@ setTimeout(function() {
               $('#messageBoard').html(player +'WINS');
               setTimeout(cleanBoard, 1288);
               winTally();
+              colorShift('#box0');
+              colorShift('#box4');
+              colorShift('#box8');
               setTimeout(victory, 1288);
               return;
             }
@@ -96,6 +105,9 @@ setTimeout(function() {
               $('#messageBoard').html(player +'WINS');
               setTimeout(cleanBoard, 1288);
               winTally();
+              colorShift('#box1');
+              colorShift('#box4');
+              colorShift('#box7');
               setTimeout(victory, 1288);
               return;
             }
@@ -109,6 +121,9 @@ setTimeout(function() {
                 new Audio('../audio/beep4.mp3').play();
                 $('#messageBoard').html(player +'WINS');
                 setTimeout(cleanBoard, 1288);
+                colorShift('#box2');
+                colorShift('#box5');
+                colorShift('#box8');
                 winTally();
                 setTimeout(victory, 1288);
                 return;
@@ -121,6 +136,9 @@ setTimeout(function() {
               new Audio('../audio/beep4.mp3').play();
               $('#messageBoard').html(player +'WINS');
               setTimeout(cleanBoard, 1288);
+              colorShift('#box2');
+              colorShift('#box4');
+              colorShift('#box6');
               winTally();
               setTimeout(victory, 1288);
               return;
@@ -135,6 +153,9 @@ setTimeout(function() {
             new Audio('../audio/beep4.mp3').play();
             $('#messageBoard').html(player +'WINS');
             setTimeout(cleanBoard, 1288);
+            colorShift('#box3');
+            colorShift('#box4');
+            colorShift('#box5');
             winTally();
             setTimeout(victory, 1288);
             return;
@@ -149,6 +170,9 @@ setTimeout(function() {
             new Audio('../audio/beep4.mp3').play();
             $('#messageBoard').html(player +'WINS');
             setTimeout(cleanBoard, 1288);
+            colorShift('#box6');
+            colorShift('#box7');
+            colorShift('#box8');
             winTally();
             setTimeout(victory, 1288);
             return;
@@ -192,4 +216,10 @@ function draw(){
       setTimeout(cleanBoard, 1288);
       return;
   }
-}
+};
+
+function colorShift(boxNo){
+   $(boxNo).addClass('colorShift');
+
+   setTimeout(function() { $(boxNo).removeClass('colorShift'); }, 1388);
+};
