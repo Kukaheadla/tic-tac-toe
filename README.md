@@ -69,3 +69,4 @@ return;
 ###Practiced & Learnt Skills 
 * manipulate DOM and jQeury interchangebly and fluently.
 * push, pull request to github as well as branching.
+* host local web server 
