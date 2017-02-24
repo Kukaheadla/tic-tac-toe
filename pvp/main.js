@@ -220,6 +220,5 @@ function draw(){
 
 function colorShift(boxNo){
    $(boxNo).addClass('colorShift');
-
    setTimeout(function() { $(boxNo).removeClass('colorShift'); }, 1388);
 };
