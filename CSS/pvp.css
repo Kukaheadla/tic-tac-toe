@@ -12,6 +12,10 @@ body {
   height: 100vh;
 }
 
+.end , p{
+  text-align: center;
+  margin:5px;
+}
 .gradient {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
   url(https://content.pulse.ea.com/content/battlefield-portal/en_US/news/battlefield-1/fall-update-battlefield-1/_jcr_content/featuredImage/renditions/rendition1.img.jpg);
@@ -140,7 +144,9 @@ a {
   margin-left: 8em;
 }
 
-@media (max-device-height: 420px) {
+@media only screen
+and (max-device-height : 739px)
+and (orientation : landscape) {
   td{
     width: 62px;
     height:  62px;
@@ -149,7 +155,7 @@ a {
 
   h1{
     font-size: 20px;
-    padding-bottom: 1px;
+    margin-bottom: 0px;
   }
 
   h2{
@@ -159,22 +165,25 @@ a {
 
   #board {
     margin: 28px;
+    margin-bottom: 10px;
   }
 
   footer{
-    margin-top:9px;
-  }
-
-  .menu{
-    margin-top: -173px;
+    margin-top: -390px;
+    margin-left: 1px;
   }
 
   h3{
-    margin-top: 5px;
+    margin-top: 0px;
+  }
+
+  body{
+    height: 100vh;
+
   }
 }
 
-@media (max-device-width: 590px){
+@media (max-device-width: 490px){
 
   h1{
     font-size: 20px;
