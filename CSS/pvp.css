@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url('../images/rendition1.img.jpg');
+  background-image: url('../../images/rendition1.img.jpg');
   background-size: cover;
   background-repeat:   no-repeat;
   height: 100vh;
@@ -18,7 +18,7 @@ body {
 }
 .gradient {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  url('../images/rendition1.img.jpg');
+  url('../../images/rendition1.img.jpg');
 }
 
 
