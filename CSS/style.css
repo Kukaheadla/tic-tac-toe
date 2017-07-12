@@ -15,7 +15,7 @@ h3 {
 
 body {
 
-  background-image: url('../../images/rendition1.img.jpg');
+  background-image: url('../images/rendition1.img.jpg');
   background-size: cover;
   background-repeat:   no-repeat;
   height: 100vh
