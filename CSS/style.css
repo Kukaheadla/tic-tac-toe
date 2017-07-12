@@ -15,7 +15,7 @@ h3 {
 
 body {
 
-  background-image: url('https://content.pulse.ea.com/content/battlefield-portal/en_US/news/battlefield-1/fall-update-battlefield-1/_jcr_content/featuredImage/renditions/rendition1.img.jpg');
+  background-image: url('../images/rendition1.img.jpg');
   background-size: cover;
   background-repeat:   no-repeat;
   height: 100vh
