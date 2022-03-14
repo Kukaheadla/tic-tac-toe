@@ -1,7 +1,7 @@
 PROJECT #1: Tic-Tac-Toe
 
-###Forword
-    The project was set by GA to create basic functional game. This is done through implmentation of coding language and manipulation of media materials which are skills we have acquired throughout the first 2 weeks of the course.
+### Forword
+The project was set by GA to create basic functional game. This is done through implmentation of coding language and manipulation of media materials which are skills we have acquired throughout the first 2 weeks of the course.
 
 The developer has made a Tic-Tac-Toe game which inclues basic functionalities or features of:
 * player alternatively place either **'X' or 'O'** onto a 3-by-3 game board, the person that connects 3 symbol of the same rows, columns or connecting the same symbol diagonally will be the winner of the round
@@ -15,13 +15,13 @@ The developers also acquired extra skills such as set time for a specific functi
 
 ---
 
-###The Technologies Used 
+### The Technologies Used 
 * HTML & CSS
 * jQuery
 * Twitter API plugin 
 * Images & Media resource (incl. image and audios) from online
 
-###Installation Instructions
+### Installation Instructions
     1. textual aspects of the games such as information were created through HTML (incl. index, PvP game page and instructions)
 2. a 3*3 table is created to for X/O symbol to be place within it. It is also marked with ID for later CSS styling and symbol matching. Codes below:
 
